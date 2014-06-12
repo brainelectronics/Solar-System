@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		DFCE1A3F194A539300362BCB /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = DFCE1A3E194A539300362BCB /* main.c */; };
 		DFCE1A41194A539300362BCB /* Solar_System.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = DFCE1A40194A539300362BCB /* Solar_System.1 */; };
+		DFCE1A4A194A539F00362BCB /* print.c in Sources */ = {isa = PBXBuildFile; fileRef = DFCE1A47194A539F00362BCB /* print.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,9 @@
 		DFCE1A3B194A539300362BCB /* Solar System */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Solar System"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFCE1A3E194A539300362BCB /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		DFCE1A40194A539300362BCB /* Solar_System.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Solar_System.1; sourceTree = "<group>"; };
+		DFCE1A47194A539F00362BCB /* print.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = print.c; sourceTree = "<group>"; };
+		DFCE1A48194A539F00362BCB /* print.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = print.h; sourceTree = "<group>"; };
+		DFCE1A49194A539F00362BCB /* includes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = includes.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,9 @@
 			children = (
 				DFCE1A3E194A539300362BCB /* main.c */,
 				DFCE1A40194A539300362BCB /* Solar_System.1 */,
+				DFCE1A47194A539F00362BCB /* print.c */,
+				DFCE1A48194A539F00362BCB /* print.h */,
+				DFCE1A49194A539F00362BCB /* includes.h */,
 			);
 			path = "Solar System";
 			sourceTree = "<group>";
@@ -118,6 +125,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFCE1A3F194A539300362BCB /* main.c in Sources */,
+				DFCE1A4A194A539F00362BCB /* print.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,6 +205,7 @@
 		DFCE1A45194A539300362BCB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -204,6 +213,7 @@
 		DFCE1A46194A539300362BCB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
